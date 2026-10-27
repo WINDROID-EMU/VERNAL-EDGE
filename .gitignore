@@ -1,0 +1,63 @@
+# ==============================================================================
+# Vernal Edge Android Port & C Runner Engine - .gitignore
+# ==============================================================================
+
+# Game Assets & Proprietary Binaries (Copyrighted / >100MB)
+data.win
+*.exe
+*.ogg
+*.zip
+*.tar.gz
+*.hashdb
+*.ico
+*.lnk
+*.info
+EULA.txt
+licenses.txt
+sdl2.txt
+options.ini
+
+# Extracted proprietary game assets
+foliage/
+lightmaps/
+room_minimap/
+loc/
+mesh/
+credits/
+
+# Reverse Engineering / Ghidra Workspace & Dumps
+ghidra_proj/
+exe_decompiled/
+*.log
+*.tsv
+pending_*.txt
+failed.txt
+
+# Runner Build Artifacts & Scratch
+runner/obj/
+runner/scratch/
+runner/test_runner
+*.o
+*.so
+*.a
+*.idsig
+
+# Android Build Outputs & Secrets
+android/build_arm64/
+android/build_apk/
+android/*.apk
+android/local.properties
+.gradle/
+android/.gradle/
+
+# Third-party Tools
+tools/utmt/
+tools/utmt.zip
+
+# System & IDE files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*~
